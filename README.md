@@ -4,8 +4,7 @@ This project demonstrates how to implement **Firebase Cloud Messaging (FCM)** pu
 
 ---
 
-![Push Notification Demo]
-(https://github.com/user-attachments/assets/96bfaf6d-62d8-4d05-a464-d0e20d54b714)
+[Push Notification Demo](https://github.com/user-attachments/assets/96bfaf6d-62d8-4d05-a464-d0e20d54b714)
 
 ## 🔧 Requirements
 
