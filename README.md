@@ -1,16 +1,46 @@
-# push_notification_assigment
+# 📲 Flutter Push Notification (FCM) Assignment
 
-A new Flutter project.
+This project demonstrates how to implement **Firebase Cloud Messaging (FCM)** push notifications in a Flutter app with **full-screen notifications**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🔧 Requirements
 
-A few resources to get you started if this is your first Flutter project:
+To complete this project, the following were needed:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Firebase Project** with Cloud Messaging enabled.
+- `google-services.json` (Android) or `GoogleService-Info.plist` (iOS).
+- Flutter dependencies:
+  - `firebase_core`
+  - `firebase_messaging`
+  - `flutter_local_notifications`
+  - `permission_handler`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## ⚙️ Firebase Setup
+
+1. Create a project in **Firebase Console**.
+2. Enable **Cloud Messaging**.
+3. Download and configure platform-specific files:
+   - `google-services.json` → place inside `android/app/`
+   - `GoogleService-Info.plist` → add inside `iOS/Runner/`
+4. Enable notification permissions on devices.
+
+---
+
+## 🔔 Example Payload Tested
+
+The app was tested with the following FCM payload (using **Postman** or API call):
+
+```json
+{
+  "to": "YOUR_DEVICE_FCM_TOKEN",
+  "priority": "high",
+  "data": {
+    "title": "High Importance Notifications",
+    "body": "This is a full screen test",
+    "route": "/home"
+  }
+}
+
